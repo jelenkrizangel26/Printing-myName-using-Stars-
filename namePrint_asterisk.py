@@ -27,8 +27,8 @@ for row in range(6):
 
 #code for L
 for row in range(6):
-    for col in range(6):
-        if col==0 or (row==6 and col>0):
+    for col in range(5):
+        if (col==0) or (row==5):
             letter_L[row][col]= "*"
              
 for i in range(6): 
@@ -37,7 +37,8 @@ for i in range(6):
         print(letter_J[i][j], end=" ") 
     print(end="  ") 
     for j in range(5): 
-        print(letter_E[i][j], end=" ") 
+        print(letter_E[i][j], end=" ")
+    print(end="  ") 
     for j in range(5):
         print(letter_L[i][j], end=" ")
     print()
