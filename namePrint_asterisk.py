@@ -7,5 +7,19 @@ height = 8
 width = (2 * height) - 1
 
 #Introduction
+print("Hello, my nickname is...\n")
 
-print("Hello, my nickname is...")
+#make a pattern JEL from Jelen
+def printJ() :
+     
+    for i in range(0,height) :
+        for j in range(0,height) :
+            if ( i == height - 1 and (j > 0 and j < height - 1) ):
+                print("*",end="")
+            elif ( (j == height - 1 and i != height - 1) or (i > (height // 2) - 1 and j == 0 and i != height - 1) ) :
+                print("*",end="")
+            else :
+                print(end=" ")
+        print()
+
+printJ()
