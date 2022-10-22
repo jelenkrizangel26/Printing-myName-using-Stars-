@@ -22,4 +22,4 @@ def printJ() :
                 print(end=" ")
         print()
 
-printJ()
+printJ(),printJ()
